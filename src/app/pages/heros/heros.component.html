@@ -1,0 +1,34 @@
+
+<main class="no-wrap padded-20 grid">
+   <div class="grid heros">
+        <div  *ngFor="let hero of heros" class="hero-card">
+            <div class="hero-card-image">
+                <img src="../assets/images/avatar/{{hero.image}}.png" alt="{{hero.name}}">
+            </div>
+            <div [className]="'des'">
+                    <h6 class="item-title relative">{{hero.name}} &nbsp;<i (click)="showForm()" class=" absolute top-0 right-0 fa fa-pen"></i></h6>
+                    <input *ngIf="wantToEdit" [(ngModel)]="hero.name" class="form-fix" #form>
+                    <p class=des>
+                        {{hero.description}}
+                    </p>
+                <button (click)="showSelectedHero(hero)"  [className]="'full-width'">View hero</button>
+            </div>
+        </div>
+   </div>
+   <!-- <div [ngClass]="{'no-width' : isEmpty}" class="no-wrap grid heroPreview">
+        <div class="vertical-divider"></div>
+       <span (click)="hideShow()" class="pulse link fa fa-times">&times;</span>
+        <div  *ngIf="!isEmpty"  class="hero-card">
+            <div class="hero-card-image">
+                <img src="../assets/images/avatar/{{selectedHero.image}}.png" alt="{{selectedHero.name}}">
+            </div>
+            <div [className]="'des'">
+                    <h6 class="item-title relative">{{selectedHero.name}} </h6>
+                    <p class=des>
+                        {{selectedHero.description}} and {{isEmpty}}
+                    </p>
+            </div>
+        </div>
+    </div> -->
+    <app-hero-detail [hero]= "selectedHero"></app-hero-detail>
+</main>

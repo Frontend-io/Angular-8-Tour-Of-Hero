@@ -1,0 +1,115 @@
+.hero-card{
+	justify-content: stretch;
+	align-items: stretch;
+	max-width: 220px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 0px !important;
+	box-sizing: border-box;
+	overflow: hidden;
+    margin: 10px !important;
+    i {
+        visibility: hidden;
+        transform: scale(0);
+        transition: .3s;
+        cursor: pointer;
+    }
+    :hover i{
+        visibility: visible;
+        transform: scale(1);
+        transition: .3s;
+    }
+    :nth-child(2){
+        margin-left: 0px !important;
+    }
+    > div{
+        margin: 0px;
+        border-bottom: 1px solid #eee;
+        :last-child{
+            border-bottom: none;  
+        }
+    }
+    .header{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: #fff;
+        margin: 0px;
+        padding: 0px 8px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+        img{
+            height: 25px;
+            width: 25px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    .hero-card-image{
+        height: 150px;
+        border-color: #ddd;
+        overflow-y: hidden;
+        img{
+            object-fit: cover;
+        }
+    }
+    .item-title{
+            font-size: 14px;
+            font-weight: 600;
+            // color: #e70d85ec;
+            text-transform: uppercase;
+            .fa{
+                font-size: 10px;
+            }
+        }
+    .des{
+        background-color: #fff;
+        padding: 8px;
+        min-height: 80px;
+        p{
+            margin-top: 0px;
+            letter-spacing: .3px;
+        }
+    }
+    input{
+        transform: translateY(5px);
+        border-bottom: 1px solid #ddd !important;
+        transition:.5s;
+        width: 100%;
+    }
+    .action{
+        margin: 5px 8px;
+        border-radius: 3px;
+        text-align: center;
+        padding: 5px;
+        box-shadow: inset 0px 0px 20px rgba(0,0,0,.03);
+        text-transform: uppercase;
+    
+    }
+    
+}
+// .hero-card
+.heroPreview{
+    min-width: 230px !important;
+    align-self: flex-start;
+    margin-left: 0px;
+    background: #FAFAFA;
+    padding: 10px;
+    transition: .5s;
+    .vertical-divider{
+        height: 100vh;
+        align-self: stretch
+    }
+    .hero-card{
+        align-self: flex-start;
+        min-width: 200px;
+    }
+}
+.no-width{
+    min-width: 0% !important;
+    width: 0px !important;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s ease-in;
+}
