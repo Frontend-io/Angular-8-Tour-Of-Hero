@@ -188,13 +188,21 @@ ul li a{
 
 
 /* Global */
+/*-------------Import fonts ---------------------------------------*/
+@font-face {
+	font-family:'Nunito';
+	src: url('../src/assets/fonts/Nunito/Nunito-Regular.ttf');
+	src: url('../src/assets/fonts/Nunito/Nunito-Regular.ttf?#iefix') format('embedded-opentype'),
+		url('../src/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype'),
+}
+  
 
 body{
 background-color: #fbfbfb;
+font-family: "Nunito" !important;
 padding: 0px;
 margin: 0px;
 color: #6f7484;
-/*font-family: "Poppins" , Roboto !important;*/
 overflow-x: hidden !important;
 -webkit-font-smoothing: subpixel-antialiased;
 -moz-osx-font-smoothing: grayscale ;
