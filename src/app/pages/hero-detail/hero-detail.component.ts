@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HerosComponent } from "../heros/heros.component";
-import { Hero } from "../../hero";
+// import { HerosComponent } from "../heros/heros.component";
+import { Hero } from "../../models/hero";
 
 @Component({
   selector: 'app-hero-detail',

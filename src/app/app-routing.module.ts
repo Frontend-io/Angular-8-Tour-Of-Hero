@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
+
 import { Routes, RouterModule } from '@angular/router';
 // PAGE IMPORTS
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HerosComponent } from './pages/heros/heros.component';
 import { HeroDetailComponent } from "./pages/hero-detail/hero-detail.component";
 

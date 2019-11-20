@@ -1,0 +1,33 @@
+.wrapper{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    min-width: 180px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: 600px;
+    margin: 0px auto;
+
+    .message{
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        padding: 15px 20px;
+        border-radius: 3px;
+        background: #fff;
+        color: #555;
+        font-size: 16px;
+        border: 2px solid #f2f2f2;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        span{
+            top: -8px;
+            right: 0px;
+            font-size: 18px;
+        }
+    }
+}

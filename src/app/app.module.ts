@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HerosComponent } from './pages/heros/heros.component';
 import { HeroDetailComponent } from "./pages/hero-detail/hero-detail.component";
+import { MessagesComponent } from './pages/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeroDetailComponent } from "./pages/hero-detail/hero-detail.component";
     HeaderComponent,
     FooterComponent,
     HerosComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

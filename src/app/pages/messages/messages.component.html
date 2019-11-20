@@ -1,0 +1,6 @@
+
+<div *ngIf = "messagesService.messages.length" class="wrapper">
+    <div *ngFor = "let message of messagesService.messages" class="grid apart message">{{message}} 
+        <span class="absolute link" (click)='messagesService.clear(message)' >&times;</span>
+    </div>
+</div>
